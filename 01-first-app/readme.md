@@ -18,11 +18,10 @@ When everything went alright you should get a result looking like this:
 
 ![electron - first app](https://github.frapsoft.com/top/electron-app-from-0-hero/01-first-app.png)
 
-Copy this line of code `require('devtron').install()` and past it insite the Console from the Developer Tools from the Browser.
-This will install a Debugging Tool called [Devtron](http://electron.atom.io/devtron/) you are now able to lunch from inside your Browser.
+Copy this line of code `require('devtron').install()` and past it to the Browser Console inside the Developer Tools.
+This will install [Devtron](http://electron.atom.io/devtron/) which allows you to Debug your Node App directly from inside the Browser.
 
-Congratulations, you have now Node.js running inside your Browser and can play to execute some node code directly with the Console in the Developer Tools.
-We have a basic app structure and all the config und compile options are setup so far to let us coding ...
+Congratulations, you have now Node.js up and running inside Chromium and some basic tooling ready.
 
 By executing `npm start` we create the main process in which our app lives and another process we called BrowserWindow to load a HTML
 file localy via file:// protocol from your disc.

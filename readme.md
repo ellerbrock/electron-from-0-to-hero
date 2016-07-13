@@ -17,7 +17,7 @@ For this project i setup the basic tooling for you but feel free to make changes
 I also will not optimize the code for deployment or minimize things. But i think at the end of this course i will provide you with those informations and create a nice setup.
 But for your next basic apps we don't wanna deploy them and keep it simple and easy ...
 
-Lets get started by cloning this repository to your local disc via `git clone https://github.com/ellerbrock/electron-skeleton.git`.
+Lets get started by cloning this repository to your local disc via `git clone https://github.com/ellerbrock/electron-from-0-to-hero.git`.
 
 In chapter 01 you will learn how to install the dependencies for our application and run your first Electron App inside the Browser. 
 Even no functionality and poorly looking you already got the V8 power inside the browser which is awesome!
