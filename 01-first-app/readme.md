@@ -1,23 +1,39 @@
-![electron-from-0-to-hero](https://github.frapsoft.com/top/open-source-v1.png)  
-
 # 01 - first Electron App [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)  
+
+
+![electron-from-0-to-hero](https://github.frapsoft.com/top/awesome-electron.png)
 
 After you finished this chapter you will get nothing more like on the screenshot.
 Looks very ugly and boring, but hidden in the background a giant is waiting for us!
 
-In this chapter i created the bare minimum to get started.
-Initialialized an npm package, created the dotfiles, linter and beautify configs and the licence stuff.
+I saved your time and prepared the basic setup we need to get started.
+Initialialized an npm package, created the dotfiles, linter and beautify configs and the licence stuff ...
+Don't worry about all that, just clone it and run it. After finishing this starter app im sure you will have your own Skeleton project 
+prepared for your needs.
 
-Start cloning this folder to your local disc an run `npm update && npm upgrade --save && npm start`.
+Ok, clone the repository to your local disc and run inside the folder `npm update && npm upgrade --save && npm start`.
 This will install the dependencies and start the application.
-When everything went ok you should have a window like this:
+
+When everything went alright you should get a result looking like this:
 
 ![electron - first app](https://github.frapsoft.com/top/electron-app-from-0-hero/01-first-app.png)
 
-Copy this line of code `require('devtron').install()` and copy it to the console it inside the chromium developer tools and execut it.
-It will install inside the browser a tool called [Devtron](http://electron.atom.io/devtron/) which help us later to debug the application.
+Copy this line of code `require('devtron').install()` and past it insite the Console from the Developer Tools from the Browser.
+This will install a Debugging Tool called [Devtron](http://electron.atom.io/devtron/) you are now able to lunch from inside your Browser.
 
-Congratulations, you have now Node.js running inside your Chromium Browser!### Contact / Social Media
+Congratulations, you have now Node.js running inside your Browser and can play to execute some node code directly with the Console in the Developer Tools.
+We have a basic app structure and all the config und compile options are setup so far to let us coding ...
+
+By executing `npm start` we create the main process in which our app lives and another process we called BrowserWindow to load a HTML
+file localy via file:// protocol from your disc.
+
+By default Chromium runs each window in its own process, which means for us that right now we can't exchange informations between those two windows.
+This we will change in the next Chapter by implementing two npm modules called [ipc](https://github.com/electron/electron/blob/master/docs/api/ipc-main.md) 
+and [remote](https://github.com/electron/electron/blob/master/docs/api/remote.md). 
+
+After the setup in lesson 02 you will learn how to exchange information between diffrent processes and windows inside the application.
+
+### Contact / Social Media
 
 *Get the latest News about Web Development, Open Source, Tooling, Server & Security*
 
